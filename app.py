@@ -19,7 +19,7 @@ def man():
     return render_template('index.html')
 
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST','GET'])
 def index():
     text = request.form['review_text']
 
